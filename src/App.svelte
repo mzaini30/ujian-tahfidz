@@ -1,30 +1,30 @@
-<script>
-	export let name;
-</script>
-
-<main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-</main>
-
-<style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
+<div class="container">
+	<br>
+	<h3 class="text-center">Ujian tahfidz</h3>
+	<hr>
+	<p>Pilih juz yang akan diujikan</p>
+	<form>
+		<center>
+			{#each Array(30) as _, n}
+				<input type="checkbox" class="checkbox" name="juz" id="juz{n + 1}">
+				<label for="juz{n + 1}" class="label btn btn-light">{n + 1}</label>
+			{/each}
+		</center>
+	</form>
+</div>
+<style type="text/css">
+	.label {
+		border-radius: 50%;
+		font-size: 20px;
+		margin: 0 10px 10px 0;
 	}
-
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
+	.checkbox:checked + .label {
+		background: var(--dark);
+		border-color: var(--dark);
+		color: white;
 	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
+	.checkbox {
+		position: absolute;
+		left: -100vw;
 	}
 </style>
