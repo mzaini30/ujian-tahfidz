@@ -5,8 +5,8 @@
     "App.svelte"
   ],
   "sourcesContent": [
-    "<div class=\"container\">\n\t<br>\n\t<h3 class=\"text-center\">Ujian tahfidz</h3>\n\t<hr>\n\t<p>Pilih juz yang akan diujikan</p>\n\t<form>\n\t\t<center>\n\t\t\t{#each Array(30) as _, n}\n\t\t\t\t<input type=\"checkbox\" class=\"checkbox\" name=\"juz\" id=\"juz{n + 1}\">\n\t\t\t\t<label for=\"juz{n + 1}\" class=\"label btn btn-light\">{n + 1}</label>\n\t\t\t{/each}\n\t\t</center>\n\t</form>\n</div>\n<style type=\"text/css\">\n\t.label {\n\t\tborder-radius: 50%;\n\t\tfont-size: 20px;\n\t\tmargin: 0 10px 10px 0;\n\t}\n\t.checkbox:checked + .label {\n\t\tbackground: var(--dark);\n\t\tborder-color: var(--dark);\n\t\tcolor: white;\n\t}\n\t.checkbox {\n\t\tposition: absolute;\n\t\tleft: -100vw;\n\t}\n</style>"
+    "<div class=\"container\">\n\t<br>\n\t<p>Pilih juz yang akan diujikan</p>\n\t<form>\n\t\t<center>\n\t\t\t{#each Array(30) as _, n}\n\t\t\t\t<input type=\"checkbox\" class=\"checkbox\" name=\"juz\" id=\"juz{n + 1}\">\n\t\t\t\t<label for=\"juz{n + 1}\" class=\"label btn btn-light\">{n + 1}</label>\n\t\t\t{/each}\n\t\t</center>\n\t</form>\n</div>\n<style type=\"text/css\">\n\t.label {\n\t\tborder-radius: 50%;\n\t\tfont-size: 30px;\n\t\tmargin: 0 10px 10px 0;\n\t}\n\t.checkbox:checked + .label {\n\t\tbackground: var(--dark);\n\t\tborder-color: var(--dark);\n\t\tcolor: white;\n\t}\n\t.checkbox {\n\t\tposition: absolute;\n\t\tleft: -100vw;\n\t}\n</style>\n"
   ],
   "names": [],
-  "mappings": "AAeC,MAAM,8BAAC,CAAC,AACP,aAAa,CAAE,GAAG,CAClB,SAAS,CAAE,IAAI,CACf,MAAM,CAAE,CAAC,CAAC,IAAI,CAAC,IAAI,CAAC,CAAC,AACtB,CAAC,AACD,wBAAS,QAAQ,CAAG,MAAM,eAAC,CAAC,AAC3B,UAAU,CAAE,IAAI,MAAM,CAAC,CACvB,YAAY,CAAE,IAAI,MAAM,CAAC,CACzB,KAAK,CAAE,KAAK,AACb,CAAC,AACD,SAAS,8BAAC,CAAC,AACV,QAAQ,CAAE,QAAQ,CAClB,IAAI,CAAE,MAAM,AACb,CAAC"
+  "mappings": "AAaC,MAAM,8BAAC,CAAC,AACP,aAAa,CAAE,GAAG,CAClB,SAAS,CAAE,IAAI,CACf,MAAM,CAAE,CAAC,CAAC,IAAI,CAAC,IAAI,CAAC,CAAC,AACtB,CAAC,AACD,wBAAS,QAAQ,CAAG,MAAM,eAAC,CAAC,AAC3B,UAAU,CAAE,IAAI,MAAM,CAAC,CACvB,YAAY,CAAE,IAAI,MAAM,CAAC,CACzB,KAAK,CAAE,KAAK,AACb,CAAC,AACD,SAAS,8BAAC,CAAC,AACV,QAAQ,CAAE,QAAQ,CAClB,IAAI,CAAE,MAAM,AACb,CAAC"
 }
