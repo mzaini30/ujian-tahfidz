@@ -1,7 +1,5 @@
 <div class="container">
 	<br>
-	<h3 class="text-center">Ujian tahfidz</h3>
-	<hr>
 	<p>Pilih juz yang akan diujikan</p>
 	<form>
 		<center>
@@ -15,7 +13,7 @@
 <style type="text/css">
 	.label {
 		border-radius: 50%;
-		font-size: 20px;
+		font-size: 30px;
 		margin: 0 10px 10px 0;
 	}
 	.checkbox:checked + .label {
