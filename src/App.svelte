@@ -54,7 +54,8 @@
 			}
 			juz.includes(0) ? data = [1, ...data] : ''
 			juz.includes(29) ? data = [...data, 602, 603, 604] : ''
-			data.sort(() => Math.random() - 0.5)
+			shuffle(data)
+			console.log(data)
 			let hasil = data[0]
 			Swal.fire(`<div>Ujian halaman <strong>${hasil}</strong></div>`)
 		}
